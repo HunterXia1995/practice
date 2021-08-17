@@ -8,7 +8,7 @@
 let mod = require(["./utils/index"], 
 function (index) {
   // rest of your code here
-  return index.test
+  index.test()
 });
 export default {
   name: 'App',
@@ -18,7 +18,18 @@ export default {
     }
   },
   created () {
-
+    // var debounce = function (fn, delay) {
+    //   let timer
+    //   // console.log(123);
+    //   return function () {
+    //     var _self = this
+    //     var arg = arguments
+    //     if (timer) clearTimeout(timer)
+    //     timer = setTimeout(() => {
+    //       fn.apply(_self, arg)
+    //     }, delay)
+    //   }
+    // }
   }
 }
 </script>
